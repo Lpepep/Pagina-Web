@@ -1,114 +1,204 @@
+/* Estilos generales para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  header {
-    position: relative;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  nav {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  main section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  article {
-    flex: 1 1 60%;
-    margin-right: 20px;
-  }
-  
-  aside {
-    flex: 1 1 35%;
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label {
-    margin: 10px 0 5px;
-  }
-  
-  form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  form button {
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background: #555;
-  }
-  
-  img {
-    display: block;
-    margin: 20px auto;
-  }
-  
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 60px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales para el main */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos específicos para secciones */
+.image-left-text-right, .text-left-image-right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image-left-text-right img, .text-left-image-right img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-left-text-right .text, .text-left-image-right .text {
+  width: 55%;
+  padding: 0 20px;
+}
+
+/* Estilos específicos para Impacto */
+.video-text {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.video-text video {
+  width: 45%;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-text .text {
+  width: 50%;
+  padding: 0 20px;
+}
+
+/* Estilos específicos para Contacto */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.contacto-imagen {
+  width: 45%;
+}
+
+.contacto-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-formulario {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-formulario h2 {
+  margin-top: 0;
+}
+
+.contacto-formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-formulario form label {
+  margin-top: 10px;
+}
+
+contacto-formulario form input, 
+contacto-formulario form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+contacto-formulario form button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+contacto-formulario form button:hover {
+  background-color: #555;
+}
+
+contacto-directo {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+contacto-directo h3 {
+  margin-top: 0;
+}
+
+contacto-directo ul {
+  list-style: none;
+  padding: 0;
+}
+
+contacto-directo ul li {
+  margin: 5px 0;
+}
